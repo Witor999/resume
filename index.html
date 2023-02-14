@@ -1,100 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Задание</title>
+    <title>Vitaliy CV</title>
+    <link href="styles.css" rel="stylesheet"/>
 </head>
 <body>
-    <img src="https://www.kino-teatr.ru/news/25823/227455.jpg" width="200"
-    alt="здесь должно быть фото Меган Фокс">
+    <div class="container">
+        <div class="info">
+            <img src="Аватарка.jpg" alt="тут моя фотка" class="avatar"/>
 
-    <h1>Виталий Гулак</h1>
+            <div class="info-text">
+                <h1>Виталий Гулак</h1>
+                <p>Я монтажник <strong>бань</strong> и плотник</p>
+                <p>Я люблю путешествовать, заниматься спортом, рыбалка и программирование</p>
 
-    <p>Я основатель одноименного <strong>Youtube</strong> канала и онлайн школы по программированию
-      <strong>Result School</strong>  
-    </p>
+                <h4>Мои социальные сети</h4>
+                
+                <a href="https://vk.com/id133099470" target="_blanc">Вконтакте</a>
+                |
+                <a href="https://t.me/witor" target="_blanc">Телеграмм</a>
+                |
+                <a href="https://ok.ru/vitaly.gulak" target="_blanc">Одноклассники</a>
+            </div>
+        </div>    
+        
+        <div class="card bg-yellow">
+            <h2>Мои хобби</h2>
+            <ol class="list">
+                <li>Рыбалка</li>
+                <li>Рисование</li>
+                <li>Тхэквондо</li>
+                <li>Программирование</li>
+            </ol>
+        </div>    
 
-    <p> Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
+        <div class="card bg-green">
+            <h2>Опыт работы</h2>
+            <table class="table">
+                
+                <tr>
+                    <td>ЦРБ</td>
+                    <td>Оператор ЭВМ</td>
+                    <td>1997-1999</td>
+                </tr>
+                <tr>
+                    <td>Тагмет</td>
+                    <td>Резчик труб и заготовок</td>
+                    <td>2001-2021</td>
+                </tr>
+                <tr>
+                    <td>Радиан</td>
+                    <td>Монтажник бань</td>
+                    <td>2021-2022</td>
+                </tr>
+                <tr>
+                    <td>ИП Сазоненко</td>
+                    <td>Плотник</td>
+                    <td>2022-...</td>
+                </tr>
 
-    <h2>Список социальных сетей:</h2>
+            </table>
+        </div>
 
-    <a href="https://vk.com/id133099470" target="_blank">VKontakt</a>
-    |
-    <a href="https://ok.ru/vitaly.gulak" target="_blank">Odnoklassniki</a>
+        <div class="card bg-red">
+            <h2>Youtube Курсы</h2>
+            <ul class="link-list">
+                <li>
+                    <a href="https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw" target="_blanc">Курсы</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=NRGQsVUQfzg">Гимнастика для глаз</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="contact">
+            <h2 class="bg-red">Связаться со мной</h2>
 
-    <h2>Мои хобби</h2>
-    <h3>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="Введите Ваше имя ...">
+                    </div>
 
-    <ol>
-      <li>Путешествия</li>
-      <li>Блоггинг</li>
-      <li>Горные лыжи</li>
-      <li>ММА</li>
-  </ol></h3>
+                    <div class="form-group">
+                        <label for="email">Ваш email:</label>
+                        <input type="email" id="email" placeholder="Введите свой email ...">
+                    </div>
+                </div>
 
-  <h2>Опыт работы</h2>
+                <div class="form-group">
+                    <label for="text">Ваше сообщение:</label>
+                    <textarea id="text" cols="15" rows="2"></textarea>
+                </div>
 
-    <table width="500" border="3">
-        <thead>
-           <tr>
-             <th>Название</th>
-             <th>Должность</th>
-             <th>Год</th>
-           </tr>
-        </thead>
-        <tbody>
-           <tr>
-              <td>LPTracker</td>
-              <td>Frontend</td>
-              <td>2015 - 2016</td>
-           </tr>
-           <tr>
-              <td>EPAM</td>
-              <td>Software Engineer</td>
-              <td>2016 - 2017</td>            
-           </tr>
-           <tr>
-              <td>Software Outsourcing Services</td>
-              <td>Senior Frontend</td>
-              <td>2017 - 2019</td>            
-           </tr>
-           <tr>
-              <td>Youtube</td>
-              <td>Blogger</td>
-              <td>2019 - сейчас</td>            
-           </tr>
-           <tr>
-              <td>Result School</td>
-              <td>CEO</td>
-              <td>2021 - сейчас</td>            
-           </tr>
-        </tbody>
-    </table>
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
 
-   <h2>Связаться со мной</h2>
+            <div class="position">
+                <div class="box"></div>
+            </div>
+            
+        </div>
 
-   <form>
+        
 
-      <div>
-         <label for="name">Ваше имя:</label>
-         <input type="text" id="name" placeholder="Введите имя">
-      </div>
-
-      <div>
-         <label for="email">Ваше email:</label>
-         <input type="email" id="email" placeholder="Введите email">
-      </div>
-
-      <div>
-         <label for="message">Ваше сообщение:</label><br>
-         <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение ..."></textarea>
-      </div>
-
-      <button type="submit">Отправить!</button>
-
-   </form>
-
+    <div style="margin-bottom: 500px;">
+    </div>
 </body>
 </html>
